@@ -1,0 +1,18 @@
+{
+  "resourceType": "Questionnaire",
+  "url": "https://domain.com/Questionnaire-AReadableIdentifier",
+  "status": "active",
+  "item": [
+    {
+      "type": "choice",
+      "linkId": "A",
+      "text": "Are you ready?"
+    },
+    {
+      "type": "choice",
+      "linkId": "B",
+      "text": "Is this a good example?",
+      "required": true
+    }
+  ]
+}
