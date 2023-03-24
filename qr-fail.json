@@ -1,0 +1,17 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "questionnaire": "https://domain.com/Questionnaire-AReadableIdentifier",
+  "status": "completed",
+  "authored": "2022-08-29T20:39:27.360Z",
+  "item": [
+    {
+      "linkId": "A",
+      "text": "Are you ready?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    }
+  ]
+}
