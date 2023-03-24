@@ -11,10 +11,15 @@ Running `sh validate.sh` will run an example script which validates the `qr-pass
 
 Running `sh validate-fail.sh` will run an example script which validates the `qr-fail.json` QuestionnaireResponse resource. This resource should fail validation as it is missing a required property which is defined in the Questionnaire, which is in the example `ig` folder.
 
+Example expected error:
+
+```
+*FAILURE*: 1 errors, 0 warnings, 0 notes
+  Error @ QuestionnaireResponse (line 1, col2): No response answer found for required item 'B'
+```
+
 ### Gotchas
 
 1) The FHIR Validator does not appear to include resources which are listed as `example` usage as part of it's validation process, so ensure that all Questionnaire resources are NOT `example` type. You can check this by downloading the `pacakge.tgz` of the Implementation Guide and ensuring you resource is not in the `examples` directory once unarchived.
 
 2) The validator does not attempt to 'resolve' the questionnaire resource over http, it must find the canonical url as part of the Implementation Guide used for validation.
-
-
