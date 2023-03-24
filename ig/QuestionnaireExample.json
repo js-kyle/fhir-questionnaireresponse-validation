@@ -4,12 +4,12 @@
   "status": "active",
   "item": [
     {
-      "type": "choice",
+      "type": "string",
       "linkId": "A",
       "text": "Are you ready?"
     },
     {
-      "type": "choice",
+      "type": "string",
       "linkId": "B",
       "text": "Is this a good example?",
       "required": true
